@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:key="pref_general">
+    <PreferenceCategory
+        android:title="@string/title_activity_settings"/>
+
+    <EditTextPreference
+        android:title="@string/pref_century_label"
+        android:key="@string/pref_century_key"
+        android:defaultValue="@string/pref_century_default"
+        android:inputType="text"
+        android:singleLine="true"
+        />
+
+    <CheckBoxPreference
+        android:title="@string/pref_sync_cw_label"
+        android:key="@string/pref_sync_cw_key"
+        android:defaultValue="@string/pref_sync_cw_default"
+        android:summaryOn="@string/pref_sync_true"
+        android:summaryOff="@string/pref_sync_false"
+        android:id="@+id/sync_cw_check"
+        />
+
+    <EditTextPreference
+        android:title="@string/pref_cw_label"
+        android:key="@string/pref_cw_key"
+        android:defaultValue="@string/pref_cw_default"
+        android:inputType="number"
+        android:singleLine="true"
+        android:id="@+id/cw_text"
+        />
+
+    <CheckBoxPreference
+        android:title="@string/pref_enable_notifications_label"
+        android:key="@string/pref_enable_notifications_key"
+        android:summaryOff="@string/pref_enable_notifications_false"
+        android:summaryOn="@string/pref_enable_notifications_true"
+        android:defaultValue="@string/pref_enable_notifications_default" />
+
+</PreferenceScreen>

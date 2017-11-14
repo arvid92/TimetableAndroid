@@ -1,0 +1,177 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".LessonDetailActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="20"
+        tools:context=".LessonDetailActivity">
+
+        <TextView
+            android:id="@+id/textView_lesson_title"
+            style="@style/TextViewLessonHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:id="@+id/layout_lesson"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/default_gap"
+            android:weightSum="20"
+            tools:context=".LessonDetailActivity">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="?android:attr/listPreferredItemHeight"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/default_gap"
+                android:weightSum="20"
+                tools:context=".LessonDetailActivity">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@mipmap/ic_lecturer"
+                    android:id="@+id/imageView_lecturer"
+                    android:layout_weight="0"
+                    android:visibility="visible"
+                    android:layout_alignParentLeft="true"/>
+
+                <TextView
+                    android:id="@+id/textView_lesson_lecturer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/button_lecturer_detail"
+                    android:layout_toRightOf="@+id/imageView_lecturer"
+                    style="@style/TextViewLessonDetails"
+                    android:gravity="center" />
+
+                <Button
+                    android:id="@+id/button_lecturer_detail"
+                    style="@style/Widget.AppCompat.Button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:minHeight="?android:attr/listPreferredItemHeight"
+                    android:text="@string/action_lecturer_detail"
+                    android:visibility="visible" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="?android:attr/listPreferredItemHeight"
+                android:orientation="horizontal"
+                android:weightSum="20"
+                tools:context=".LessonDetailActivity">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@mipmap/ic_lessontime"
+                    android:id="@+id/imageView_lessontime"
+                    android:layout_weight="0"
+                    android:visibility="visible"
+                    android:layout_alignParentRight="true"/>
+
+                <TextView
+                    android:id="@+id/textView_lesson_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    style="@style/TextViewLessonDetails"
+                    android:gravity="center" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="?android:attr/listPreferredItemHeight"
+                android:orientation="horizontal"
+                android:weightSum="20"
+                tools:context=".LessonDetailActivity">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@mipmap/ic_room"
+                    android:id="@+id/imageView_room"
+                    android:layout_weight="0"
+                    android:visibility="visible"
+                    android:layout_alignParentRight="true"/>
+
+                <TextView
+                    android:id="@+id/textView_lesson_room"
+                    style="@style/TextViewLessonDetails"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="?android:attr/listPreferredItemHeight"
+                android:orientation="horizontal"
+                android:weightSum="20"
+                tools:context=".LessonDetailActivity">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@mipmap/ic_testform"
+                    android:id="@+id/imageView_testform"
+                    android:layout_weight="0"
+                    android:visibility="visible"
+                    android:layout_alignParentRight="true"/>
+
+                <TextView
+                    android:id="@+id/textView_lesson_testForm"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    style="@style/TextViewLessonDetails"
+                    android:gravity="center" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="?android:attr/listPreferredItemHeight"
+                android:orientation="horizontal"
+                android:weightSum="20"
+                tools:context=".LessonDetailActivity">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@mipmap/ic_changed"
+                    android:id="@+id/imageView_changed"
+                    android:layout_weight="0"
+                    android:visibility="visible"
+                    android:layout_alignParentRight="true"/>
+
+                <TextView
+                    android:id="@+id/textView_lesson_changes"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    style="@style/TextViewLessonDetails"
+                    android:textColor="#de0000" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

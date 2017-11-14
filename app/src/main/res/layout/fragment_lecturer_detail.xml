@@ -1,0 +1,99 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".LessonDetailActivity"
+    android:paddingLeft="@dimen/default_gap">
+
+    <TextView
+        android:id="@+id/textview_lecturer_name"
+        style="@style/TextViewLessonHeader"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent" />
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="20"
+        tools:context=".LessonDetailActivity"
+        android:minHeight="?android:attr/listPreferredItemHeight">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:srcCompat="@mipmap/ic_room"
+            android:id="@+id/imageView_room"
+            android:layout_weight="0"
+            android:visibility="gone"
+            android:layout_alignParentRight="true"/>
+
+        <TextView
+            android:id="@+id/textview_lecturer_office"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            style="@style/TextViewLessonDetails"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="20"
+        tools:context=".LessonDetailActivity"
+        android:minHeight="?android:attr/listPreferredItemHeight">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:srcCompat="@mipmap/ic_phone"
+            android:id="@+id/imageView_phone"
+            android:layout_weight="0"
+            android:visibility="gone"
+            android:layout_alignParentRight="true"/>
+
+        <TextView
+            android:id="@+id/textview_lecturer_phone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            style="@style/TextViewLessonDetails"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:clickable="true"/>
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="20"
+        tools:context=".LessonDetailActivity"
+        android:minHeight="?android:attr/listPreferredItemHeight">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:srcCompat="@mipmap/ic_mail"
+            android:id="@+id/imageView_mail"
+            android:layout_weight="0"
+            android:visibility="gone"
+            android:layout_alignParentRight="true"/>
+
+        <TextView
+
+            android:id="@+id/textview_lecturer_mail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            style="@style/TextViewLessonDetails"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:clickable="true"/>
+    </LinearLayout>
+</LinearLayout>
